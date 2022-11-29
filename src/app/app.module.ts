@@ -11,6 +11,7 @@ import { UserinfoComponent } from './userinfo/userinfo.component';
 import { ProductlistComponent } from './productlist/productlist.component';
 import { UserdataComponent } from './userdata/userdata.component';
 import { TodoComponent } from './todo/todo.component';
+import { HttpClientModule } from '@angular/common/http'
 const myRoute:Routes=[
   {
     path:"",
@@ -52,7 +53,8 @@ const myRoute:Routes=[
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(myRoute)
+    RouterModule.forRoot(myRoute),
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
