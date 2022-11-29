@@ -22,6 +22,10 @@ const myRoute:Routes=[
   {
     path:"userinfo",
     component:UserinfoComponent
+  },
+  {
+    path:"productlist",
+    component:ProductlistComponent
   }
 ]
 @NgModule({

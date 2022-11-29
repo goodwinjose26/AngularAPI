@@ -1,1 +1,26 @@
-<p>productlist works!</p>
+<app-navbar></app-navbar>
+
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row g-3 mt-3">
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4" *ngFor="let i of data.products">
+                    <div class="card" style="width: 18rem;" >
+                        <h5 class="card-title">{{i.title}}</h5>
+                        <p class="card-text">{{i.description}}</p>
+                        <p class="card-text">price:{{i.price}}</p>
+                        <p class="card-text">discountPercentage:{{i.discountPercentage}}</p>
+                        <p class="card-text">price:{{i.price}}</p>
+                        <p class="card-text">rating:{{i.rating}}</p>
+                        <p class="card-text">brand:{{i.rating}}</p>
+                        
+                        <p class="card-text">category:{{i.category}}</p>
+
+                          <img height="200px" width="200px" src={{i.images}} class="card-img-top" alt="...">
+                         
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
