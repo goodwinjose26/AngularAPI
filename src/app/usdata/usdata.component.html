@@ -1,0 +1,21 @@
+<app-navbar></app-navbar>
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">NATION</th>
+        <th scope="col">YEAR</th>
+        <th scope="col">POPULATION</th>
+        <th scope="col">SLUNG Nation</th>
+      </tr>
+    </thead>
+    <tbody >
+      <tr *ngFor="let i of data.data">
+        <td>{{i.Nation}}</td>
+        <td>{{i.Year}}</td>
+        <td>{{i.Population}}</td>
+        <td>{{i.SlugNation}}</td>
+
+      </tr>
+      
+    </tbody>
+  </table>
