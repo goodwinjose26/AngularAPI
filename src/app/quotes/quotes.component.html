@@ -1,0 +1,19 @@
+<app-navbar></app-navbar>
+
+
+
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">quote</th>
+        <th scope="col">author</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let i of data.quotes">
+        <td>quote:{{i.quote}}</td>
+        <td>author:{{i.author}}</td>
+      </tr>
+    
+    </tbody>
+  </table>

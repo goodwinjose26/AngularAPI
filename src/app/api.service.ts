@@ -31,4 +31,8 @@ export class ApiService {
   {
     return this.http.get("https://reqres.in/api/users?page=1")
   }
+  fetchQutoe =()=>
+  {
+    return this.http.get("https://dummyjson.com/quotes")
+  }
 }

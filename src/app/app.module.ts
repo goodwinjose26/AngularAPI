@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule, Routes } from '@angular/router';
 
@@ -11,7 +11,8 @@ import { UserinfoComponent } from './userinfo/userinfo.component';
 import { ProductlistComponent } from './productlist/productlist.component';
 import { UserdataComponent } from './userdata/userdata.component';
 import { TodoComponent } from './todo/todo.component';
-import { HttpClientModule } from '@angular/common/http'
+import { HttpClientModule } from '@angular/common/http';
+import { QuotesComponent } from './quotes/quotes.component'
 const myRoute:Routes=[
   {
     path:"",
@@ -37,6 +38,10 @@ const myRoute:Routes=[
   {
     path:"todo",
     component:TodoComponent
+  },
+  {
+    path:"quote",
+    component:QuotesComponent
   }
 ]
 @NgModule({
@@ -48,7 +53,8 @@ const myRoute:Routes=[
     UserinfoComponent,
     ProductlistComponent,
     UserdataComponent,
-    TodoComponent
+    TodoComponent,
+    QuotesComponent
   ],
   imports: [
     BrowserModule,
