@@ -1,0 +1,21 @@
+<app-navbar></app-navbar>
+
+
+
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">TODO</th>
+        <th scope="col">COMPLETED</th>
+        <th scope="col">USERID</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let i of data.todos">
+        <td>todo:{{i.todo}}</td>
+        <td>completed:{{i.completed}}</td>
+        <td>@userId:{{i.userId}}</td>
+      </tr>
+    
+    </tbody>
+  </table>
