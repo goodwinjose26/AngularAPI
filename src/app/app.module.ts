@@ -9,6 +9,7 @@ import { UsdataComponent } from './usdata/usdata.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { UserinfoComponent } from './userinfo/userinfo.component';
 import { ProductlistComponent } from './productlist/productlist.component';
+import { UserdataComponent } from './userdata/userdata.component';
 const myRoute:Routes=[
   {
     path:"",
@@ -26,6 +27,10 @@ const myRoute:Routes=[
   {
     path:"productlist",
     component:ProductlistComponent
+  },
+  {
+    path:"userdata",
+    component:UserdataComponent
   }
 ]
 @NgModule({
@@ -35,7 +40,8 @@ const myRoute:Routes=[
     UsdataComponent,
     NavbarComponent,
     UserinfoComponent,
-    ProductlistComponent
+    ProductlistComponent,
+    UserdataComponent
   ],
   imports: [
     BrowserModule,
